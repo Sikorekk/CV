@@ -1,0 +1,165 @@
+body{
+	background-color: #C27FC7;
+}
+
+input{
+	font-family: 'Quicksand', sans-serif;
+}
+
+input[type="text"], input[type="password"]{
+	margin-top: 2vh;
+	line-height: 6vh;
+	width: 40vh;
+	border: 0;
+	background-color: #F8F1F9;
+	border-bottom: solid 1px #93439D;
+	padding-top: 1px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+	outline: none;
+}
+
+input::placeholder{
+	color: #B870C2;
+}
+
+main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form{
+	background-color: #F8F1F9;
+	border-radius: 1%;
+	margin-top: 10vh;
+	width: 50vh;
+	height: 80vh;
+	box-shadow: 0 0 200px 1px #28122B;
+}
+
+.inputs{
+	flex-direction: column;	
+	height: 41%;
+	display: flex;
+	align-items: center;
+	padding-top: 6.3vh;
+}
+
+.alert{
+	height: 25%;
+	text-align: center;
+}
+
+.alerttext{
+	font-family: 'Quicksand', sans-serif !important;
+	font-size: 16px;
+	color: red;
+}
+
+.alert:hover .alerttext{
+	transition: 500ms;
+	font-size: 14px;
+}
+
+.alert .alerttext{
+	transition: 500ms;
+	font-size: 16px;
+}
+
+input[type="text"].focusedInput, input[type="password"].focusedInput{
+	border-bottom: solid 1.2px #93439D;
+	padding-top: 0;
+	transition: 500ms;
+}
+
+input[type="text"], input[type="password"]{
+	border-bottom: solid 1px #93439D;
+	padding-top: 0;
+	transition: 500ms;
+	opacity: 100%;
+}
+
+.focusedInput::placeholder{
+	font-size: 12px;
+	opacity: 40%;
+	transition: 1s;
+}
+
+input::placeholder{
+	font-size: 14px;
+	opacity: 100%;
+	transition: 1s;
+}
+
+
+.submits{
+	flex-direction: row;
+	display: flex;
+	width: 100%;
+	height: 10%;
+}
+
+.sub1, .sub2{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	width: 50% !important;
+	height: 100% !important;
+}
+
+input[type="submit"].sub1, input[type="submit"].sub2{
+	border: 0;
+}
+
+.wrong{
+	border-bottom-color: red !important;
+}
+
+.wrong::placeholder{
+	color: red;
+}
+
+.sub1{
+	background-color: #B870C2 !important;
+	line-height: 300%;
+}
+
+.sub1:hover{
+	background-color: #A952B5 !important;
+}
+
+.sub1:active{
+	font-size: 12px;
+	transition: 300ms;
+	color: #EBD6EE;
+}
+
+.sub2{
+	background-color: #93439D !important;
+}
+
+.sub2:hover{
+	background-color: #813B8A !important;
+}
+
+.sub2:active{
+	font-size: 12px;
+	transition: 300ms;
+	color: #EBD6EE;
+}
+
+.heading{
+	color: #93439D;
+	margin-top: 5vh;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+}
